@@ -32,7 +32,7 @@ jobs:
       - name: Replace MapBox Token
         run: |
           # Replace the placeholder with the actual token from secrets
-          sed -i "s/{{MAPBOX_TOKEN}}/${{ secrets.MAPBOX_TOKEN }}/g" kepler.gl.html
+          sed -i "s/{{MAPBOX_TOKEN}}/${{ secrets.MAPBOX_TOKEN }}/g" index.html
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
